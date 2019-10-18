@@ -54,6 +54,9 @@ function ConfigList(){
         serverNum=$(($i+1))
         tab="$tab - [${serverNum}]	${CONFIG[1]}		${CONFIG[4]}        ${CONFIG[5]}\n"
     done
+    ##
+    # column -t 表格列对齐
+    ##
     echo -e $tab|column -t
 }
 
