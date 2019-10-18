@@ -68,3 +68,6 @@ CONFIGS=(
 如密码为'-OU[]98' 在CONFIG配置中写成'-OU\[]98'
 否则，提示要手动输入密码
 ```
+
+## 问题
+mac环境下shell `getopt`需要安装`brew install gnu-getopt`
