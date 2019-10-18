@@ -12,11 +12,16 @@ CONFIGS=(
 #    "aws            AWS                         22      0.0.0.0            ubuntu        NULL                ~/tools/wilee.pem"
 #    "aly            阿里云                       22      0.0.0.0            work          NULL"
 )
+# 脚本所在目录
+SCRIPT_DIR="/Users/xujw/wwwroot/SSHAutoLogin/"
+# 服务器配置文件目录
+CONFIG_DIR="${SCRIPT_DIR}config/"
 
 #读取自定义服务器配置文件（`./config/mdd.config`）列表，合并服务器配置列表
-sshloginrc_path=$PWD/config/mdd.config
+sshloginrc_path=${CONFIG_DIR}mdd.config
 
-source $PWD/getopt.sh
+# 加载参数选项
+source ${SCRIPT_DIR}getopt.sh
 
 if [ -f ${sshloginrc_path} ]; then
     CONFIGS=()

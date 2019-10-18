@@ -38,7 +38,7 @@ while true
 do
     case "$1" in
         --config)
-            sshloginrc_path=$2
+            sshloginrc_path=${CONFIG_DIR}$2
             shift 2
             ;;
         -h|--help)
