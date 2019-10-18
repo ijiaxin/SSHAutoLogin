@@ -1,5 +1,13 @@
 #!/bin/bash
 
+##
+#getopt参考文档
+# https://linuxeye.com/389.html
+# https://www.jianshu.com/p/6393259f0a13
+# mac getopt 不能使用问题需安装brew install gnu-getopt
+# https://stackoverflow.com/questions/23630424/getopt3-on-mac-os-and-centos
+##
+
 function helpInfo(){
     echo "mac环境ssh连接工具
 h | help    帮助文件
