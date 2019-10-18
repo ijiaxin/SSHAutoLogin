@@ -72,3 +72,4 @@ CONFIGS=(
 ## 问题
 # [mac下getopt问题](https://stackoverflow.com/questions/23630424/getopt3-on-mac-os-and-centos)
 mac环境下shell `getopt`需要安装`brew install gnu-getopt`
+安装后执行`echo 'export PATH="/usr/local/opt/gnu-getopt/bin:$PATH"' >> ~/.zshrc`
